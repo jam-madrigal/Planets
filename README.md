@@ -1,2 +1,2 @@
 # Planets
-A proejct using data from the Kepler space telescope and nodejs.
+A project using data from the Kepler space telescope and nodejs.
