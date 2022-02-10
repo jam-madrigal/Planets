@@ -7,9 +7,13 @@ fs.createReadStream('kepler-data.csv')
     .on('data', (data) => {
         results.push(data);
     })
+    .on('error', (err) => {
+        console.log(err);
+    })
     .on('end', (results) => {
         console.log(results);
         console.log("Done reading data stream")
     })
+    
 
 // parse();
