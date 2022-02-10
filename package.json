@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jam-madrigal/Planets/issues"
   },
-  "homepage": "https://github.com/jam-madrigal/Planets#readme"
+  "homepage": "https://github.com/jam-madrigal/Planets#readme",
+  "dependencies": {
+    "csv-parse": "^5.0.4"
+  }
 }
