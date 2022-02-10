@@ -12,7 +12,7 @@ fs.createReadStream('kepler_data.csv')
     .on('error', (err) => {
         console.log(err);
     })
-    .on('end', (results) => {
+    .on('end', () => {
         console.log(results);
         console.log("Done reading data stream")
     })
