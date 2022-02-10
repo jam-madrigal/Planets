@@ -1,0 +1,20 @@
+{
+  "name": "planets",
+  "version": "1.0.0",
+  "description": "A project using data from the Kepler space telescope and nodejs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jam-madrigal/Planets.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jam-madrigal/Planets/issues"
+  },
+  "homepage": "https://github.com/jam-madrigal/Planets#readme"
+}
