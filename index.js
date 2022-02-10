@@ -5,7 +5,7 @@ const fs = require('fs');
 const results = [];
 
 // Using node to read our kepler data csv file, adding handlers to push the results to an array and log them, as well as catch any errors
-fs.createReadStream('kepler-data.csv')
+fs.createReadStream('kepler_data.csv')
     .on('data', (data) => {
         results.push(data);
     })
