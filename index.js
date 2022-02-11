@@ -4,7 +4,7 @@ const fs = require('fs');
 // Array to store the results of our kepler data read with node's api
 const habitablePlanets = [];
 
-// Function to filter the data for planets with a confirmed koi disposition property
+// Function to filter the data for planets with a confirmed koi disposition property. The key/property can also be selected with dot notation
 function isHabitablePlanet(planet) {
     return planet['koi_disposition'] === 'CONFIRMED';
 }
@@ -27,7 +27,7 @@ fs.createReadStream('kepler_data.csv')
         console.log(err);
     })
     .on('end', () => {
-        console.log(results);
+        console.log(habitablePlanets);
         console.log("Done reading data stream")
     })
     
