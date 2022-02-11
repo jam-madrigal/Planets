@@ -30,6 +30,7 @@ fs.createReadStream('kepler_data.csv')
     })
     .on('end', () => {
         console.log(habitablePlanets);
+        console.log(`Found ${habitablePlanets.length} habitable planets.`)
         console.log("Done reading data stream")
     })
     
