@@ -4,10 +4,11 @@ const fs = require('fs');
 // Array to store the results of our kepler data read with node's api
 const habitablePlanets = [];
 
-// Function to filter the data for planets with a confirmed koi disposition property, and a habitable stellar flux value. The key/property can also be selected with dot notation
+// Function to filter the data for planets with a confirmed koi disposition property, a habitable stellar flux value, and is within the limit of radial size in relation to Earth's. The key/property can also be selected with dot notation
 function isHabitablePlanet(planet) {
     return planet['koi_disposition'] === 'CONFIRMED' 
-    && planet['koi_insol'] > 0.36 && planet['koi_insol'] < 1.11;
+    && planet['koi_insol'] > 0.36 && planet['koi_insol'] < 1.11
+    && planet['koi_prad'] < 1.6;
 }
 
 
